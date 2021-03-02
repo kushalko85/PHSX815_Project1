@@ -72,7 +72,7 @@ class Random:
 
     def Category6(self):
         R = self.rand()
-        face = []
+        face = 0.
         if R <= 0.96/6:
             face = 1
 
@@ -92,4 +92,28 @@ class Random:
             face = 6
 
         return face
+
+
+    def Category6f(self):
+        R = self.rand()
+        out = 0.
+        if R <= 1/6:
+            out = 1
+
+        elif R > 1/6 and R <= 2/6:
+            out = 2
+
+        elif R > 2/6 and R <= 3/6:
+            out = 3
+
+        elif R > 3/6 and R <= 4/6:
+            out = 4
+
+        elif R > 4/6 and R <= 5/6:
+            out = 5
+
+        else:
+            out = 6
+
+        return out
 
